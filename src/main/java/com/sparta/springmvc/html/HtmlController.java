@@ -1,4 +1,4 @@
-package com.sparta.springmvc.controller;
+package com.sparta.springmvc.html;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,7 +9,7 @@ public class HtmlController {
     private static long visitCount=0;
     @GetMapping("/static-hello")
     public String hello(){
-        return "hello.html";
+        return "hello";
     }
 
     @GetMapping("/html/redirect")
